@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_selector">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/ic_1"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:layout_marginLeft="15sp"
+        android:layout_centerVertical="true"
+        android:text="GeekShare"
+        android:layout_toRightOf="@+id/image" />
+
+</RelativeLayout>

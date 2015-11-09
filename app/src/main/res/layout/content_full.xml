@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7sp">
+
+        <RelativeLayout
+            android:id="@+id/rlTopLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_gray"
+            android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="#808080"
+            android:padding="10dp"
+            android:text="TEst"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlDetailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvHeader">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ivPicture"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tvDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BirthDay: 04 Mar 2015"
+                android:layout_toRightOf="@+id/ivPicture"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_birthday"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight:   47kg"
+                android:layout_toRightOf="@+id/ivPicture"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_weight"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/tvDob"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height:   160cm"
+                android:layout_toRightOf="@+id/ivPicture"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_height"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/tvWeight"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvVeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is Veg?:   Yes!"
+                android:layout_toRightOf="@+id/ivPicture"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_veg"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/tvHeight"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinks:     No"
+                android:layout_toRightOf="@+id/ivPicture"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_drink"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/tvVeg"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status #"
+            android:layout_below="@+id/rlTopLayout"
+            android:layout_marginTop="10dp"
+            android:textColor="#3498db"/>
+
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/textview_background_gray"
+            android:layout_below="@+id/tvStatus"
+            android:layout_marginTop="5dp"
+            android:lines="5"
+            android:gravity="top"
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:text="Hello how are you"/>
+
+        <LinearLayout
+            android:id="@+id/llBottom1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/etStatus"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btShare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Share"
+                android:drawableLeft="@drawable/ic_share"/>
+
+            <Button
+                android:id="@+id/btSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Send"
+                android:drawableLeft="@drawable/ic_sms"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_below="@+id/llBottom1"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_selector"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/innerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3sp"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7sp"
+             />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="testsdgsdghglsgsgsgshgls shgsjghsd sghsj"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image"
+            android:layout_toLeftOf="@+id/forward"
+            />
+
+        <ImageView
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10sp"
+            android:padding="5sp"
+            android:background="@drawable/ic_forward"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
